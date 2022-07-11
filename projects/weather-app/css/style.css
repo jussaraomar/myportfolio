@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+body{
+
+    width:100%;
+    height:100vh;
+    margin:0;
+    /* background: #B5D8FF; 
+background: -webkit-linear-gradient(to right, #B5D8FF, #B3D6FD, #B5D8FF);  
+background: linear-gradient(to right, #B5D8FF, #B3D6FD, #B5D8FF);  */
+background-image:url(../images/pexels-pixabay-531756.jpg);
+background-repeat: no-repeat;
+
+  
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    font-size:22px;
+
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly  ;
+    flex-direction: column;
+}
+
+.weather__search__container{
+    width: 60%;
+}
+.weather__search{
+    width:100%;
+    padding:15px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255,255,255, 1);
+    font-size:20px;
+    color: inherit;
+    margin-bottom: 20px;
+
+}
+
+.weather__search::placeholder{
+    color: rgba(0,0,0, 0.6);
+   
+}
+
+input:focus{
+    outline: none;
+}
+
+.card__container{
+    width: 65%;
+    height:60vh;
+   
+    box-sizing: border-box;
+    
+    /* background: #e4f1ff; */
+
+    background: #cae4ff;
+
+    /* background: #B5D8FF; 
+    background: -webkit-linear-gradient(to right, #B5D8FF, #B3D6FD, #B5D8FF);  
+    background: linear-gradient(to right, #B5D8FF, #B3D6FD, #B5D8FF);
+     */
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+
+.today__weather__image {
+ 
+    width:30%;
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather__image{
+    width:40vmin; 
+   
+    
+}
+
+.weather__temperature__details__forecast{
+  
+    width:70%;
+
+  
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.weather__temperature__details {
+    width: 90%;
+    height: 45%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+
+}
+
+.weather__temperature{
+  
+    height: 70%;
+    width: 35%;
+  
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 300;
+
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+   
+
+}
+
+.weather__details {
+
+   
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+
+.weather__city__day{
+    
+    height:50%;
+    width: 100%;
+
+}
+
+.weather__city__day h2 {
+    color:#0462ce;
+}
+
+
+
+.weather__city{
+    font-size:36px;
+    font-weight: 600;
+    margin:20px 0;
+}
+
+.weather__day{
+    font-size: 30px;
+    margin:10px 0;
+    font-weight: 400;
+}
+
+
+.weather__current {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-content:center;
+
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    
+    height:50%;
+    width: 100%;
+
+}
+
+
+.weather__indicator__image {
+    display: flex;
+    align-items: center;
+}
+
+.weather__indicator__image img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.weather__indicator--humidity::before {
+    background-image: url(../images/weather-icons-2/icons/humidity.svg);
+  
+}
+
+
+.weather__indicator--wind::before {
+    background-image: url(../images/weather-icons-2/icons/wind.svg);
+}
+
+
+.weather__indicator--pressure::before {
+    background-image: url(../images/weather-icons-2/icons/pressure.svg);
+}
+
+.weather__details p {
+
+}
+
+
+.weather__forecast{
+    width: 100%;
+    height: 45%;
+    text-align: center;
+   
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+
+
+.weather__forecast__icon {
+    max-width: 50%;
+}
+
+.weather__forecast__item{
+    /* background: rgba(255,255,255,0.3); */
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+   
+    width:calc(20% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) and (max-width:  1366px) {
+
+
+        
+    body{
+
+        width:100%;
+        height:100vh;
+    
+    background-image:url(../images/pexels-pixabay-531756.jpg);
+  
+
+    
+      
+    
+        font-size:20px;
+
+    }
+
+    .container {
+      
+        height: 100%;
+       
+    }
+
+    .weather__search__container{
+        width: 70%;
+    }
+
+
+    .weather__search{
+        
+        font-size:20px;
+        color: inherit;
+        margin-bottom: 10px;
+
+    }
+
+
+
+    .card__container{
+        width: 80%;
+        height:50vh;
+    
+    
+        /* background: #e4f1ff; */
+
+        /* background: #B5D8FF; 
+        background: -webkit-linear-gradient(to right, #B5D8FF, #B3D6FD, #B5D8FF);  
+        background: linear-gradient(to right, #B5D8FF, #B3D6FD, #B5D8FF);
+        */
+     
+        display: flex;
+        flex-direction: row;
+
+
+
+    }
+
+
+    .today__weather__image {
+    
+        width:30%;
+      
+    
+       
+    }
+
+    .weather__image{
+        width:30vmin; 
+    
+        
+    }
+
+    .weather__temperature__details__forecast{
+    
+        width:70%;
+
+    
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .weather__temperature__details {
+        width: 90%;
+        height: 45%;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+
+    }
+
+    .weather__temperature{
+    
+        height: 70%;
+        width: 30%;
+    
+       
+        font-size: 50px;
+      
+    }
+
+    .weather__details {
+
+    
+        width: 60%;
+        height: 100%;
+      
+
+    }
+
+    .weather__city__day{
+        
+        height:50%;
+        width: 100%;
+
+    }
+
+
+    .weather__city{
+        font-size:30px;
+       
+        margin:10px 0;
+    }
+
+    .weather__day{
+        font-size: 24px;
+      
+    }
+
+
+    .weather__current {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, calc(100%/2));
+        justify-content: center;
+        align-content:center;
+
+        
+        height:50%;
+        width: 100%;
+
+    }
+
+
+
+
+    .weather__indicator__image {
+        display: flex;
+        align-items: center;
+    }
+
+    .weather__indicator__image img {
+        height: 35px;
+        width: 35px;
+
+    }
+
+    .weather__current p{
+        font-size: 16px;
+    }
+
+
+
+    .weather__forecast{
+        width: 100%;
+        height: 45%;
+       
+    }
+
+
+
+    .weather__forecast__icon {
+        max-width: 50%;
+    }
+
+    .weather__forecast__item{
+        /* background: rgba(255,255,255,0.3); */
+      
+        border-radius: 5px;
+        margin: 2px;
+        padding: 5px;
+      
+    
+     
+    
+    }
+
+    .weather__forecast__item h5 {
+        font-size: 12px;
+    }
+
+    .weather__forecast__item p {
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 899px)  {
+
+
+    
+body{
+
+    width:100%;
+    height:100vh;
+  
+background-image:url(../images/pexels-pixabay-531756.jpg);
+background-repeat: no-repeat;
+
+ 
+    font-size:16px;
+
+}
+
+.container {
+   
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly  ;
+    flex-direction: column;
+}
+
+.weather__search__container{
+    width: 90%;
+    height: 10%;
+}
+.weather__search{
+    width:100%;
+    padding:10px 10px;
+    border-radius: 10px;
+   
+    font-size:16px;
+    
+   
+}
+
+
+.card__container{
+    width: 90%;
+    height:85%;
+   
+ 
+    border-radius: 10px;
+  
+    flex-direction: column;
+
+
+
+}
+
+
+.today__weather__image {
+ 
+    width:100%;
+    height: 20%;
+  
+    flex-direction: row;
+}
+
+.weather__image{
+    width:30vmin; 
+   
+    
+}
+.today__weather__image  img {
+
+    width: 90%;
+    height: 90%;
+}
+.weather__temperature__details__forecast{
+  
+    width:100%;
+height: 85%;
+  
+    
+
+
+}
+
+.weather__temperature__details {
+    width: 90%;
+    height: 50%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.weather__temperature{
+  
+    height: 40%;
+    width: 30%;
+  
+
+    font-size: 26px;
+    
+
+
+}
+
+.weather__details {
+
+   
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+
+.weather__city__day{
+    
+    height:20%;
+    width: 100%;
+
+}
+
+
+.weather__city{
+    font-size:20px;
+  
+    margin:5px 0;
+}
+
+.weather__day{
+    font-size: 14px;
+    margin:5px 0;
+    font-weight: 400;
+}
+
+
+.weather__current {
+    
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-content:center;
+
+    border-radius: 10px;
+    
+    height:75%;
+    width: 100%;
+
+}
+
+
+.weather__indicator__image {
+    display: flex;
+    align-items: center;
+}
+
+.weather__indicator__image img {
+    height: 35px;
+    width: 35px;
+
+}
+
+.weather__details p {
+    font-size: 14px;
+
+}
+
+
+.weather__forecast{
+    width: 100%;
+    height: 45%;
+    text-align: center;
+   
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5px;
+
+
+}
+
+
+.weather__forecast__icon {
+    max-width: 50%;
+}
+
+.weather__forecast__item{
+    /* background: rgba(255,255,255,0.3); */
+   
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    height:45%;
+    display: flex;
+    justify-content: space-around;
+
+    
+    flex: 1 1 30%;
+ 
+   
+   
+   
+   
+}
+
+.weather__forecast__item h5,img,p {
+    height: 30%;
+    margin: 5px;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
