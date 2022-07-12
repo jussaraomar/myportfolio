@@ -1589,7 +1589,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 666px) {
+@media screen and (max-width: 666px) {
   html {
     font-size: 40.5%;
   }
